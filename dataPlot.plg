@@ -1,0 +1,891 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dataPlot - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/dataPlot.res" /d "NDEBUG" "F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\dataPlot.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP41.tmp" with contents
+[
+/nologo /MT /W3 /GX /Od /D "WIN32" /D "_WINDOWS" /D "_MBCS" /Fp"Release/dataPlot.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\BigInt.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\checkData.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\dataPlot.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\dataPlotDlg.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\DrawThread.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\HandleThread.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\mscomm.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\receiveData.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\adxfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\amountfilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\annotationcallout.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\annotationtool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\antialiastool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\areaseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\arrowseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\aspect.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\averagefunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\axes.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\axis.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\axisarrowtool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\axisgridpen.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\axislabels.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\axislabelsitem.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\axisscrolltool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\axistitle.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\backimage.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\bannertool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\bar3dseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\barjoinseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\barseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\bevelfilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\bezierseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\blurfilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\bmpexport.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\bollingerfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\boxplotseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\brightnessfilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\brush.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\bubble3dseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\bubbleseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\calendarcell.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\calendarcellupper.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\calendarseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\candleseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\canvas.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\ccifunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\chartaxispen.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\chartfont.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\charthiddenpen.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\chartimagetool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\circlelabels.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\circulargauge.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\clipseriestool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\clockseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\clvfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\colorbandtool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\colorfilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\colorgridseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\colorlinetool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\compressfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\contourlevel.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\contourlevels.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\contourmarks.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\contourseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\contrastfilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\cropfilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\cursortool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\curvefittingfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\custom3dpaletteseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\customfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\darvasseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\datatabletool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\deltapointseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\donutseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\downsamplingfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\dragmarkstool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\dragpointtool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\drawline.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\drawlinelist.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\drawlinetool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\embossfilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\environment.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\epsexport.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\errorbarseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\errorseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\expavgfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\explodedslices.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\expmovavgfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\export.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\extralegendtool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\fadertool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\fastlineseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\fibonacciitem.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\fibonaccilevels.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\fibonaccitool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\filteritems.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\filterregion.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\floatxyz.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\framebrush.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\framedborder.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\frametool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\funnelseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\gammacorrectionfilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\ganttseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\gantttool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\gaugepointerrange.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\gaugeseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\gaugeseriespointer.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\gifexport.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\gllightsource.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\glposition.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\gradient.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\grayscalefilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\gridbandbrush.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\gridbandtool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\gridtransposetool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\highlowlineseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\highlowseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\histogramfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\histogramseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\horizareaseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\horizbarseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\horizboxplotseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\horizhistogramseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\horizlineseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\htmlexport.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\huelumsatfilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\imagebarseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\imagepointseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\import.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\isosurfaceseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\jpegexport.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\kagiseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\legend.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\legenditem.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\legenditems.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\legendpalettetool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\legendscrollbartool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\legendsymbol.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\legendtitle.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\levelsegment.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\lighttool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\lineargauge.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\lineseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\linktool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\macdfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\magnifytool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\mappolygon.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\mappolygonlist.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\mapseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\margins.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\marks.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\markscallout.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\marksitem.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\markssymbol.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\markstiptool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\medianfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\metafileexport.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\mirrorfilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\modefunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\mosaicfilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\movingavgfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\nativeexport.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\nearesttool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\numericgauge.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\numericmarker.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\obvfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\orgitem.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\orgitemcollection.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\orgseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\orgshape.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\page.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\pagenumtool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\panel.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\pcxexport.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\pdfexport.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\pen.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\performancefunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\piemarks.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\pieotherslice.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\pieseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\pietool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\pngexport.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\point3dseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\pointarray.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\pointer.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\pointfigureseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\pointseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\polarbarseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\polargridseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\polarseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\printer.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\printersettings.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\pvofunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\pyramidseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\radarseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\rectangletool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\renkoseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\resizefilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\rmsfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\rotatefilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\rotatetool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\rsifunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\sarfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\scroll.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\scrollbarthumb.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\selectortool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\series.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\seriesanimationtool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\seriesbandtool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\seriesgroup.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\seriesgroups.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\serieslist.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\seriesmarkposition.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\seriesmarkspositions.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\seriesregiontool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\seriesstatstool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\shapeseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\sharpenfilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\smithseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\smoothingfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\smoothpoints.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\softenfilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\spacing.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\stddeviationfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\strings.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\subgradient.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\subsetteefunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\surfacenearesttool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\surfaceseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\surfacesides.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\svgexport.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\tablelegend.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\tagcloudseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\tchart.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\teecustomshape.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\teefilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\teefont.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\teefunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\teeopengl.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\teepicture.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\teepoint2d.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\teepoint3d.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\teerect.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\teeshadow.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\teeshape.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\teeshapepanel.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\text3dtool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\textexport.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\tilefilter.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\titles.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\toollist.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\tools.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\towerseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\transposeseriestool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\trendfunction.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\trisurfaceseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\valuelist.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\valuelists.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\vector3dseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\videoplayertool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\videotool.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\volumepipeseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\volumeseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\wall.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\walls.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\waterfallseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\windroseseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\worldseries.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\xamlexport.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\xlsexport.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\xmlexport.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\zoom.cpp"
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\zoomfilter.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP41.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP42.tmp" with contents
+[
+/nologo /MT /W3 /GX /Od /D "WIN32" /D "_WINDOWS" /D "_MBCS" /Fp"Release/dataPlot.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\Software\Microsoft Visual Studio\MSDev98\MyProjects\dataPlot\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP42.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP43.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/dataPlot.pdb" /machine:I386 /out:"Release/dataPlot.exe" 
+".\Release\BigInt.obj"
+".\Release\checkData.obj"
+".\Release\dataPlot.obj"
+".\Release\dataPlotDlg.obj"
+".\Release\DrawThread.obj"
+".\Release\HandleThread.obj"
+".\Release\mscomm.obj"
+".\Release\receiveData.obj"
+".\Release\StdAfx.obj"
+".\Release\adxfunction.obj"
+".\Release\amountfilter.obj"
+".\Release\annotationcallout.obj"
+".\Release\annotationtool.obj"
+".\Release\antialiastool.obj"
+".\Release\areaseries.obj"
+".\Release\arrowseries.obj"
+".\Release\aspect.obj"
+".\Release\averagefunction.obj"
+".\Release\axes.obj"
+".\Release\axis.obj"
+".\Release\axisarrowtool.obj"
+".\Release\axisgridpen.obj"
+".\Release\axislabels.obj"
+".\Release\axislabelsitem.obj"
+".\Release\axisscrolltool.obj"
+".\Release\axistitle.obj"
+".\Release\backimage.obj"
+".\Release\bannertool.obj"
+".\Release\bar3dseries.obj"
+".\Release\barjoinseries.obj"
+".\Release\barseries.obj"
+".\Release\bevelfilter.obj"
+".\Release\bezierseries.obj"
+".\Release\blurfilter.obj"
+".\Release\bmpexport.obj"
+".\Release\bollingerfunction.obj"
+".\Release\boxplotseries.obj"
+".\Release\brightnessfilter.obj"
+".\Release\brush.obj"
+".\Release\bubble3dseries.obj"
+".\Release\bubbleseries.obj"
+".\Release\calendarcell.obj"
+".\Release\calendarcellupper.obj"
+".\Release\calendarseries.obj"
+".\Release\candleseries.obj"
+".\Release\canvas.obj"
+".\Release\ccifunction.obj"
+".\Release\chartaxispen.obj"
+".\Release\chartfont.obj"
+".\Release\charthiddenpen.obj"
+".\Release\chartimagetool.obj"
+".\Release\circlelabels.obj"
+".\Release\circulargauge.obj"
+".\Release\clipseriestool.obj"
+".\Release\clockseries.obj"
+".\Release\clvfunction.obj"
+".\Release\colorbandtool.obj"
+".\Release\colorfilter.obj"
+".\Release\colorgridseries.obj"
+".\Release\colorlinetool.obj"
+".\Release\compressfunction.obj"
+".\Release\contourlevel.obj"
+".\Release\contourlevels.obj"
+".\Release\contourmarks.obj"
+".\Release\contourseries.obj"
+".\Release\contrastfilter.obj"
+".\Release\cropfilter.obj"
+".\Release\cursortool.obj"
+".\Release\curvefittingfunction.obj"
+".\Release\custom3dpaletteseries.obj"
+".\Release\customfunction.obj"
+".\Release\darvasseries.obj"
+".\Release\datatabletool.obj"
+".\Release\deltapointseries.obj"
+".\Release\donutseries.obj"
+".\Release\downsamplingfunction.obj"
+".\Release\dragmarkstool.obj"
+".\Release\dragpointtool.obj"
+".\Release\drawline.obj"
+".\Release\drawlinelist.obj"
+".\Release\drawlinetool.obj"
+".\Release\embossfilter.obj"
+".\Release\environment.obj"
+".\Release\epsexport.obj"
+".\Release\errorbarseries.obj"
+".\Release\errorseries.obj"
+".\Release\expavgfunction.obj"
+".\Release\explodedslices.obj"
+".\Release\expmovavgfunction.obj"
+".\Release\export.obj"
+".\Release\extralegendtool.obj"
+".\Release\fadertool.obj"
+".\Release\fastlineseries.obj"
+".\Release\fibonacciitem.obj"
+".\Release\fibonaccilevels.obj"
+".\Release\fibonaccitool.obj"
+".\Release\filteritems.obj"
+".\Release\filterregion.obj"
+".\Release\floatxyz.obj"
+".\Release\framebrush.obj"
+".\Release\framedborder.obj"
+".\Release\frametool.obj"
+".\Release\funnelseries.obj"
+".\Release\gammacorrectionfilter.obj"
+".\Release\ganttseries.obj"
+".\Release\gantttool.obj"
+".\Release\gaugepointerrange.obj"
+".\Release\gaugeseries.obj"
+".\Release\gaugeseriespointer.obj"
+".\Release\gifexport.obj"
+".\Release\gllightsource.obj"
+".\Release\glposition.obj"
+".\Release\gradient.obj"
+".\Release\grayscalefilter.obj"
+".\Release\gridbandbrush.obj"
+".\Release\gridbandtool.obj"
+".\Release\gridtransposetool.obj"
+".\Release\highlowlineseries.obj"
+".\Release\highlowseries.obj"
+".\Release\histogramfunction.obj"
+".\Release\histogramseries.obj"
+".\Release\horizareaseries.obj"
+".\Release\horizbarseries.obj"
+".\Release\horizboxplotseries.obj"
+".\Release\horizhistogramseries.obj"
+".\Release\horizlineseries.obj"
+".\Release\htmlexport.obj"
+".\Release\huelumsatfilter.obj"
+".\Release\imagebarseries.obj"
+".\Release\imagepointseries.obj"
+".\Release\import.obj"
+".\Release\isosurfaceseries.obj"
+".\Release\jpegexport.obj"
+".\Release\kagiseries.obj"
+".\Release\legend.obj"
+".\Release\legenditem.obj"
+".\Release\legenditems.obj"
+".\Release\legendpalettetool.obj"
+".\Release\legendscrollbartool.obj"
+".\Release\legendsymbol.obj"
+".\Release\legendtitle.obj"
+".\Release\levelsegment.obj"
+".\Release\lighttool.obj"
+".\Release\lineargauge.obj"
+".\Release\lineseries.obj"
+".\Release\linktool.obj"
+".\Release\macdfunction.obj"
+".\Release\magnifytool.obj"
+".\Release\mappolygon.obj"
+".\Release\mappolygonlist.obj"
+".\Release\mapseries.obj"
+".\Release\margins.obj"
+".\Release\marks.obj"
+".\Release\markscallout.obj"
+".\Release\marksitem.obj"
+".\Release\markssymbol.obj"
+".\Release\markstiptool.obj"
+".\Release\medianfunction.obj"
+".\Release\metafileexport.obj"
+".\Release\mirrorfilter.obj"
+".\Release\modefunction.obj"
+".\Release\mosaicfilter.obj"
+".\Release\movingavgfunction.obj"
+".\Release\nativeexport.obj"
+".\Release\nearesttool.obj"
+".\Release\numericgauge.obj"
+".\Release\numericmarker.obj"
+".\Release\obvfunction.obj"
+".\Release\orgitem.obj"
+".\Release\orgitemcollection.obj"
+".\Release\orgseries.obj"
+".\Release\orgshape.obj"
+".\Release\page.obj"
+".\Release\pagenumtool.obj"
+".\Release\panel.obj"
+".\Release\pcxexport.obj"
+".\Release\pdfexport.obj"
+".\Release\pen.obj"
+".\Release\performancefunction.obj"
+".\Release\piemarks.obj"
+".\Release\pieotherslice.obj"
+".\Release\pieseries.obj"
+".\Release\pietool.obj"
+".\Release\pngexport.obj"
+".\Release\point3dseries.obj"
+".\Release\pointarray.obj"
+".\Release\pointer.obj"
+".\Release\pointfigureseries.obj"
+".\Release\pointseries.obj"
+".\Release\polarbarseries.obj"
+".\Release\polargridseries.obj"
+".\Release\polarseries.obj"
+".\Release\printer.obj"
+".\Release\printersettings.obj"
+".\Release\pvofunction.obj"
+".\Release\pyramidseries.obj"
+".\Release\radarseries.obj"
+".\Release\rectangletool.obj"
+".\Release\renkoseries.obj"
+".\Release\resizefilter.obj"
+".\Release\rmsfunction.obj"
+".\Release\rotatefilter.obj"
+".\Release\rotatetool.obj"
+".\Release\rsifunction.obj"
+".\Release\sarfunction.obj"
+".\Release\scroll.obj"
+".\Release\scrollbarthumb.obj"
+".\Release\selectortool.obj"
+".\Release\series.obj"
+".\Release\seriesanimationtool.obj"
+".\Release\seriesbandtool.obj"
+".\Release\seriesgroup.obj"
+".\Release\seriesgroups.obj"
+".\Release\serieslist.obj"
+".\Release\seriesmarkposition.obj"
+".\Release\seriesmarkspositions.obj"
+".\Release\seriesregiontool.obj"
+".\Release\seriesstatstool.obj"
+".\Release\shapeseries.obj"
+".\Release\sharpenfilter.obj"
+".\Release\smithseries.obj"
+".\Release\smoothingfunction.obj"
+".\Release\smoothpoints.obj"
+".\Release\softenfilter.obj"
+".\Release\spacing.obj"
+".\Release\stddeviationfunction.obj"
+".\Release\strings.obj"
+".\Release\subgradient.obj"
+".\Release\subsetteefunction.obj"
+".\Release\surfacenearesttool.obj"
+".\Release\surfaceseries.obj"
+".\Release\surfacesides.obj"
+".\Release\svgexport.obj"
+".\Release\tablelegend.obj"
+".\Release\tagcloudseries.obj"
+".\Release\tchart.obj"
+".\Release\teecustomshape.obj"
+".\Release\teefilter.obj"
+".\Release\teefont.obj"
+".\Release\teefunction.obj"
+".\Release\teeopengl.obj"
+".\Release\teepicture.obj"
+".\Release\teepoint2d.obj"
+".\Release\teepoint3d.obj"
+".\Release\teerect.obj"
+".\Release\teeshadow.obj"
+".\Release\teeshape.obj"
+".\Release\teeshapepanel.obj"
+".\Release\text3dtool.obj"
+".\Release\textexport.obj"
+".\Release\tilefilter.obj"
+".\Release\titles.obj"
+".\Release\toollist.obj"
+".\Release\tools.obj"
+".\Release\towerseries.obj"
+".\Release\transposeseriestool.obj"
+".\Release\trendfunction.obj"
+".\Release\trisurfaceseries.obj"
+".\Release\valuelist.obj"
+".\Release\valuelists.obj"
+".\Release\vector3dseries.obj"
+".\Release\videoplayertool.obj"
+".\Release\videotool.obj"
+".\Release\volumepipeseries.obj"
+".\Release\volumeseries.obj"
+".\Release\wall.obj"
+".\Release\walls.obj"
+".\Release\waterfallseries.obj"
+".\Release\windroseseries.obj"
+".\Release\worldseries.obj"
+".\Release\xamlexport.obj"
+".\Release\xlsexport.obj"
+".\Release\xmlexport.obj"
+".\Release\zoom.obj"
+".\Release\zoomfilter.obj"
+".\Release\dataPlot.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP43.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BigInt.cpp
+checkData.cpp
+dataPlot.cpp
+dataPlotDlg.cpp
+DrawThread.cpp
+HandleThread.cpp
+mscomm.cpp
+receiveData.cpp
+adxfunction.cpp
+amountfilter.cpp
+annotationcallout.cpp
+annotationtool.cpp
+antialiastool.cpp
+areaseries.cpp
+arrowseries.cpp
+aspect.cpp
+averagefunction.cpp
+axes.cpp
+axis.cpp
+axisarrowtool.cpp
+Generating Code...
+Compiling...
+axisgridpen.cpp
+axislabels.cpp
+axislabelsitem.cpp
+axisscrolltool.cpp
+axistitle.cpp
+backimage.cpp
+bannertool.cpp
+bar3dseries.cpp
+barjoinseries.cpp
+barseries.cpp
+bevelfilter.cpp
+bezierseries.cpp
+blurfilter.cpp
+bmpexport.cpp
+bollingerfunction.cpp
+boxplotseries.cpp
+brightnessfilter.cpp
+brush.cpp
+bubble3dseries.cpp
+bubbleseries.cpp
+Generating Code...
+Compiling...
+calendarcell.cpp
+calendarcellupper.cpp
+calendarseries.cpp
+candleseries.cpp
+canvas.cpp
+ccifunction.cpp
+chartaxispen.cpp
+chartfont.cpp
+charthiddenpen.cpp
+chartimagetool.cpp
+circlelabels.cpp
+circulargauge.cpp
+clipseriestool.cpp
+clockseries.cpp
+clvfunction.cpp
+colorbandtool.cpp
+colorfilter.cpp
+colorgridseries.cpp
+colorlinetool.cpp
+compressfunction.cpp
+Generating Code...
+Compiling...
+contourlevel.cpp
+contourlevels.cpp
+contourmarks.cpp
+contourseries.cpp
+contrastfilter.cpp
+cropfilter.cpp
+cursortool.cpp
+curvefittingfunction.cpp
+custom3dpaletteseries.cpp
+customfunction.cpp
+darvasseries.cpp
+datatabletool.cpp
+deltapointseries.cpp
+donutseries.cpp
+downsamplingfunction.cpp
+dragmarkstool.cpp
+dragpointtool.cpp
+drawline.cpp
+drawlinelist.cpp
+drawlinetool.cpp
+Generating Code...
+Compiling...
+embossfilter.cpp
+environment.cpp
+epsexport.cpp
+errorbarseries.cpp
+errorseries.cpp
+expavgfunction.cpp
+explodedslices.cpp
+expmovavgfunction.cpp
+export.cpp
+extralegendtool.cpp
+fadertool.cpp
+fastlineseries.cpp
+fibonacciitem.cpp
+fibonaccilevels.cpp
+fibonaccitool.cpp
+filteritems.cpp
+filterregion.cpp
+floatxyz.cpp
+framebrush.cpp
+framedborder.cpp
+Generating Code...
+Compiling...
+frametool.cpp
+funnelseries.cpp
+gammacorrectionfilter.cpp
+ganttseries.cpp
+gantttool.cpp
+gaugepointerrange.cpp
+gaugeseries.cpp
+gaugeseriespointer.cpp
+gifexport.cpp
+gllightsource.cpp
+glposition.cpp
+gradient.cpp
+grayscalefilter.cpp
+gridbandbrush.cpp
+gridbandtool.cpp
+gridtransposetool.cpp
+highlowlineseries.cpp
+highlowseries.cpp
+histogramfunction.cpp
+histogramseries.cpp
+Generating Code...
+Compiling...
+horizareaseries.cpp
+horizbarseries.cpp
+horizboxplotseries.cpp
+horizhistogramseries.cpp
+horizlineseries.cpp
+htmlexport.cpp
+huelumsatfilter.cpp
+imagebarseries.cpp
+imagepointseries.cpp
+import.cpp
+isosurfaceseries.cpp
+jpegexport.cpp
+kagiseries.cpp
+legend.cpp
+legenditem.cpp
+legenditems.cpp
+legendpalettetool.cpp
+legendscrollbartool.cpp
+legendsymbol.cpp
+legendtitle.cpp
+Generating Code...
+Compiling...
+levelsegment.cpp
+lighttool.cpp
+lineargauge.cpp
+lineseries.cpp
+linktool.cpp
+macdfunction.cpp
+magnifytool.cpp
+mappolygon.cpp
+mappolygonlist.cpp
+mapseries.cpp
+margins.cpp
+marks.cpp
+markscallout.cpp
+marksitem.cpp
+markssymbol.cpp
+markstiptool.cpp
+medianfunction.cpp
+metafileexport.cpp
+mirrorfilter.cpp
+modefunction.cpp
+Generating Code...
+Compiling...
+mosaicfilter.cpp
+movingavgfunction.cpp
+nativeexport.cpp
+nearesttool.cpp
+numericgauge.cpp
+numericmarker.cpp
+obvfunction.cpp
+orgitem.cpp
+orgitemcollection.cpp
+orgseries.cpp
+orgshape.cpp
+page.cpp
+pagenumtool.cpp
+panel.cpp
+pcxexport.cpp
+pdfexport.cpp
+pen.cpp
+performancefunction.cpp
+piemarks.cpp
+pieotherslice.cpp
+Generating Code...
+Compiling...
+pieseries.cpp
+pietool.cpp
+pngexport.cpp
+point3dseries.cpp
+pointarray.cpp
+pointer.cpp
+pointfigureseries.cpp
+pointseries.cpp
+polarbarseries.cpp
+polargridseries.cpp
+polarseries.cpp
+printer.cpp
+printersettings.cpp
+pvofunction.cpp
+pyramidseries.cpp
+radarseries.cpp
+rectangletool.cpp
+renkoseries.cpp
+resizefilter.cpp
+rmsfunction.cpp
+Generating Code...
+Compiling...
+rotatefilter.cpp
+rotatetool.cpp
+rsifunction.cpp
+sarfunction.cpp
+scroll.cpp
+scrollbarthumb.cpp
+selectortool.cpp
+series.cpp
+seriesanimationtool.cpp
+seriesbandtool.cpp
+seriesgroup.cpp
+seriesgroups.cpp
+serieslist.cpp
+seriesmarkposition.cpp
+seriesmarkspositions.cpp
+seriesregiontool.cpp
+seriesstatstool.cpp
+shapeseries.cpp
+sharpenfilter.cpp
+smithseries.cpp
+Generating Code...
+Compiling...
+smoothingfunction.cpp
+smoothpoints.cpp
+softenfilter.cpp
+spacing.cpp
+stddeviationfunction.cpp
+strings.cpp
+subgradient.cpp
+subsetteefunction.cpp
+surfacenearesttool.cpp
+surfaceseries.cpp
+surfacesides.cpp
+svgexport.cpp
+tablelegend.cpp
+tagcloudseries.cpp
+tchart.cpp
+teecustomshape.cpp
+teefilter.cpp
+teefont.cpp
+teefunction.cpp
+teeopengl.cpp
+Generating Code...
+Compiling...
+teepicture.cpp
+teepoint2d.cpp
+teepoint3d.cpp
+teerect.cpp
+teeshadow.cpp
+teeshape.cpp
+teeshapepanel.cpp
+text3dtool.cpp
+textexport.cpp
+tilefilter.cpp
+titles.cpp
+toollist.cpp
+tools.cpp
+towerseries.cpp
+transposeseriestool.cpp
+trendfunction.cpp
+trisurfaceseries.cpp
+valuelist.cpp
+valuelists.cpp
+vector3dseries.cpp
+Generating Code...
+Compiling...
+videoplayertool.cpp
+videotool.cpp
+volumepipeseries.cpp
+volumeseries.cpp
+wall.cpp
+walls.cpp
+waterfallseries.cpp
+windroseseries.cpp
+worldseries.cpp
+xamlexport.cpp
+xlsexport.cpp
+xmlexport.cpp
+zoom.cpp
+zoomfilter.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+dataPlot.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
