@@ -322,6 +322,9 @@ void CDataPlotDlg::OnCommMscomm1()
 				}
 				SlowDown++;
 				count++;
+				CString showCount;
+				showCount.Format("%d",count);
+				((CStatic *)GetDlgItem(IDC_COUNT))->SetWindowText(showCount);
 				//if (count >= (m_SaveNum + 50)){
 				//	//控制文本长度
 				//	UpdateData(true);
@@ -424,7 +427,9 @@ void CDataPlotDlg::OnBtnopensi()
 		m_Mscomm1.SetPortOpen(true);
 		CString text;
 		m_ComboSI.GetLBText(m_ComboSI.GetCurSel(),text);
-		((CStatic *)GetDlgItem(IDC_TIPS))->SetWindowText(text+"已开启");}
+		((CStatic *)GetDlgItem(IDC_TIPS))->SetWindowText(text+"已开启");
+		count = 0;
+	}
 	else
 		AfxMessageBox("cannot open serial port");
 	m_Mscomm1.GetInput();//预读缓冲区清除数据
@@ -436,7 +441,6 @@ void CDataPlotDlg::OnBtnclosesi()
 {
 	// TODO: Add your control notification handler code here
 	m_Mscomm1.SetPortOpen(false);
-	count=0;
 	CString text;
 	m_ComboSI.GetLBText(m_ComboSI.GetCurSel(),text);
 	((CStatic *)GetDlgItem(IDC_TIPS))->SetWindowText(text+"已关闭");
@@ -456,15 +460,16 @@ void CDataPlotDlg::OnBtnSave()
 		if(FileDlg.DoModal()==IDOK){
 			ofstream ofs(FileDlg.GetPathName());
 			GetDlgItem(IDC_EDIT_DATA)->GetWindowText(outFile);
-			outFile.Replace(" ", "\n");
 			int position = -1;
 			if (count <= m_SaveNum){
+				outFile.Replace(" ", "\n");
 				ofs << outFile;
 			}
 			else{
 				for (int i = 0; i < count-m_SaveNum; i++){
-					position = outFile.Find("\n", position + 1);
+					position = outFile.Find(" ", position + 1);
 				}
+				outFile.Replace(" ", "\n");
 				ofs << outFile.Mid(position + 1);
 			}
 		}
