@@ -38,7 +38,7 @@
 #define IDC_SaveNum                     1028
 #define IDC_BtnDataSet                  1029
 #define IDC_COUNT                       1030
-#define MAX_TEXT                        100000
+#define MAX_TEXT                        1050
 
 // Next default values for new objects
 // 

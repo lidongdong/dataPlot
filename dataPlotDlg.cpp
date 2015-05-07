@@ -7,7 +7,7 @@
 #include "linkData.h"
 #include "dataPlot.h"
 #include "dataPlotDlg.h"
-#include "HandleThread.h"
+//#include "HandleThread.h"
 #include "DrawThread.h"
 
 using namespace std;
@@ -26,6 +26,10 @@ static char THIS_FILE[] = __FILE__;
 int CDataPlotDlg::state = 0;
 int CDataPlotDlg::pause = 0;
 PointList pointList;
+CString receive;
+int SlowDown = 0;
+int average = 0;
+int tempResult = 0;
 
 class CAboutDlg : public CDialog
 {
@@ -263,8 +267,7 @@ ON_EVENT(CDataPlotDlg, IDC_MSCOMM1, 1 /* OnComm */, OnCommMscomm1, VTS_NONE)
 END_EVENTSINK_MAP()
 
 
-CString receive;
-int SlowDown = 0;
+
 void CDataPlotDlg::OnCommMscomm1() 
 {
 	// TODO: Add your control notification handler code here
@@ -286,7 +289,6 @@ void CDataPlotDlg::OnCommMscomm1()
 			if (pause == 0){
 				CString CheckTemp;
 				CheckTemp = m_ReceiveBlock.ByteToBit(bt);
-				//m_str.ReleaseBuffer();
 				m_str += CheckTemp;
 				cData.Check(CheckTemp);
 				if (cData.GetVal() == 8){
@@ -313,55 +315,102 @@ void CDataPlotDlg::OnCommMscomm1()
 				CString receiveUnit;
 				receiveUnit = m_ReceiveBlock.Get64bit();
 				ld.add64(receiveUnit);
-				cResult = ld.compute(); 
-				if(cResult=="z"){
-					receive+="0 ";
+				cResult = ld.compute(); //数据处理
+				//均值处理*****************************************************************
+				if (average != 5){
+					if (cResult!="z")tempResult += _ttoi(cResult);
+					average++;
 				}
 				else{
-					receive+=(cResult);
-				}
-				SlowDown++;
-				count++;
-				CString showCount;
-				showCount.Format("%d",count);
-				((CStatic *)GetDlgItem(IDC_COUNT))->SetWindowText(showCount);
-				//if (count >= (m_SaveNum + 50)){
-				//	//控制文本长度
-				//	UpdateData(true);
-				//	int pos = -1;
-				//	for (int i = 0; i < 50; i++){
-				//		pos = m_EditData.Find(" ", pos+1);
-				//	}
-				//	m_EditData =  m_EditData.Mid(pos+1);
-				//	count -= 50;
-				//	UpdateData(false);
-				//}
-				if (count == MAX_TEXT){
-					UpdateData(true);
-					int pos = -1;
-					for (int i = 0; i < MAX_TEXT - m_SaveNum; i++){
-						pos = m_EditData.Find(" ", pos + 1);
+					if (tempResult == 0)cResult = "z";
+					else
+					{
+						int ld = tempResult / 5;
+						cResult.Format("%d", ld);
+						cResult += " ";
+						count++;
 					}
-					m_EditData = m_EditData.Mid(pos + 1);
-					UpdateData(false);
-					count = m_SaveNum;
+					tempResult = 0;
+					average = 0;
+					if (cResult == "z"){
+						receive += "0 ";
+					}
+					else{
+						receive += (cResult);
+					}
+					SlowDown++;
+					//计数器
+					CString showCount;
+					showCount.Format("%d", count);
+					((CStatic *)GetDlgItem(IDC_COUNT))->SetWindowText(showCount);
+					//文本框刷新
+					if (count == m_SaveNum+50){
+						UpdateData(true);
+						int pos = -1;
+						for (int i = 0; i < 50; i++){
+							pos = m_EditData.Find(" ", pos + 1);
+						}
+						m_EditData = m_EditData.Mid(pos + 1);
+						UpdateData(false);
+						count = m_SaveNum;
+					}
+					if (SlowDown = 10){
+						CEdit *pEdit = (CEdit *)GetDlgItem(IDC_EDIT_DATA);//数据显示窗口自动滚动到最新
+						int textLength = pEdit->GetWindowTextLength();
+						pEdit->SetSel(textLength, textLength);
+						pEdit->ReplaceSel(receive);
+						SlowDown = 0;
+						receive.Empty();
+					}
+
+					//添加到画图序列
+					if (cResult == "z"){
+						pointList.add("000000000000000000000");
+					}
+					else{
+						pointList.add(cResult);
+					}
+					ld.Clear();
 				}
-				//CEdit *pEdit = (CEdit *)GetDlgItem(IDC_EDIT_DATA);
-				if(SlowDown=10){
-					CEdit *pEdit = (CEdit *)GetDlgItem(IDC_EDIT_DATA);//数据显示窗口自动滚动到最新
-					int textLength = pEdit->GetWindowTextLength();
-					pEdit->SetSel(textLength,textLength);
-					pEdit->ReplaceSel(receive);
-					SlowDown=0;
-					receive.Empty();
-				}
-				//m_pThrd->PostThreadMessage(WM_DRAW,(WPARAM)this,(LPARAM)&pointList);
-				if(cResult=="z"){
-					pointList.add("000000000000000000000");
-				}else{
-					pointList.add(cResult);
-				}
-				ld.Clear();
+				//************************************************************************
+			//	if(cResult=="z"){
+			//		receive+="0 ";
+			//	}
+			//	else{
+			//		receive+=(cResult);
+			//	}
+			//	SlowDown++;
+			//	count++;
+			//	//计数器
+			//	CString showCount;
+			//	showCount.Format("%d",count);
+			//	((CStatic *)GetDlgItem(IDC_COUNT))->SetWindowText(showCount);
+			//	//文本框刷新
+			//	if (count == MAX_TEXT){
+			//		UpdateData(true);
+			//		int pos = -1;
+			//		for (int i = 0; i < MAX_TEXT - m_SaveNum; i++){
+			//			pos = m_EditData.Find(" ", pos + 1);
+			//		}
+			//		m_EditData = m_EditData.Mid(pos + 1);
+			//		UpdateData(false);
+			//		count = m_SaveNum;
+			//	}
+			//	if(SlowDown=10){
+			//		CEdit *pEdit = (CEdit *)GetDlgItem(IDC_EDIT_DATA);//数据显示窗口自动滚动到最新
+			//		int textLength = pEdit->GetWindowTextLength();
+			//		pEdit->SetSel(textLength,textLength);
+			//		pEdit->ReplaceSel(receive);
+			//		SlowDown=0;
+			//		receive.Empty();
+			//	}
+			//	//添加到画图序列
+			//	if(cResult=="z"){
+			//		pointList.add("000000000000000000000");
+			//	}else{
+			//		pointList.add(cResult);
+			//	}
+			//	ld.Clear();
 			}
 		}
 	}
@@ -510,8 +559,6 @@ void CDataPlotDlg::OnPause()
 void CDataPlotDlg::OnBtnPaint() 
 {
 	// TODO: Add your control notification handler code here
-	//m_dThrd->PostThreadMessage(WM_DRAWLINE, (WPARAM)this,(LPARAM)&pointList);
-	//pointList.Draw(this);
 }
 
 void CDataPlotDlg::OnBtnDataSet() 
